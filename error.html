@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<Link>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+123377
+<img src="123.png" alt="">
+</body>
+<script>
+    // try {
+    //     setTimeout(function () {
+    //         console.log(u)
+    //     })   // 未定义变量
+    // } catch(e) {
+    //     console.log('我知道错误了');
+    //     console.log(e);
+    // }
+    // setTimeout(function(){
+    //     // 在这里加入 catch try 就可以阻止了任务块异常，不过代码就很不优雅
+    //     console.log(1却err)
+    // }, 800)
+    window.addEventListener('error', (e) => {
+        console.log('捕获到异常：', e);
+        return true
+    }, true)
+    // console.log(1o)
+    // window.onerror = function(e){
+    //     console.log(e)
+    // }
+    console.log('永远不会执行');
+</script>
+<script>
+    console.log('我继续执行')
+</script>
+</html>
